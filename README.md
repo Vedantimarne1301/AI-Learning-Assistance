@@ -6,17 +6,17 @@ An AI-powered full-stack web application that generates structured educational c
 
 ##  Features
 
-| Feature - Description |
-
-| **Lesson Generation**  AI-generated summary, key points, and quiz for any topic |
-| **Voice Search**  Speak your topic using the browser's Web Speech API |
-| **Simplified Mode**  Toggle between normal and beginner-friendly explanation |
-| **Interactive Quiz**  3-question quiz with option selection and instant feedback |
-| **AI Quiz Feedback**  Per-question explanation of mistakes, correct concept, and topics to review |
-| **Results Screen**  Full score breakdown with per-question review |
-| **Regenerate**  Re-generate any lesson with one click |
-| **Recent Searches**  Last 3 topics saved in localStorage for quick re-access |
-| **Multi-page Flow**  Home → Lesson → Quiz with React Router |
+| Feature | Description |
+|---|---|
+| **Lesson Generation** | AI-generated summary, key points, and quiz for any topic |
+| **Voice Search** | Speak your topic using the browser's Web Speech API |
+| **Simplified Mode** | Toggle between normal and beginner-friendly explanation |
+| **Interactive Quiz** | 3-question quiz with option selection and instant feedback |
+| **AI Quiz Feedback** | Per-question explanation of mistakes, correct concept, and topics to review |
+| **Results Screen** | Full score breakdown with per-question review |
+| **Regenerate** | Re-generate any lesson with one click |
+| **Recent Searches** | Last 3 topics saved in localStorage for quick re-access |
+| **Multi-page Flow** | Home → Lesson → Quiz with React Router |
 
 ---
 
