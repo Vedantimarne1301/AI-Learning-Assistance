@@ -1,10 +1,7 @@
-# ============================================================
+
 # AI Learning Assistant — Dependency Reference
-# ============================================================
-# This project uses Node.js (not Python), so this file serves
-# as a human-readable reference for all dependencies.
 # Run the install commands listed under each section.
-# ============================================================
+
 
 # ── BACKEND (Node.js / Express) ──────────────────────────────
 # Runtime: Node.js >= 18.x  |  npm >= 9.x
@@ -13,7 +10,7 @@ express@^4.18.2          # HTTP server & routing
 cors@^2.8.5              # Cross-origin requests (frontend ↔ backend)
 dotenv@^16.4.5           # Load .env variables
 axios@^1.7.2             # HTTP client to call Groq API
-groq-sdk@^0.3.3          # Official Groq Node SDK (optional but recommended)
+groq-sdk@^0.3.3          # Official Groq Node SDK
 express-validator@^7.1.0 # Input validation middleware
 morgan@^1.10.0           # HTTP request logger
 
@@ -25,10 +22,11 @@ morgan@^1.10.0           # HTTP request logger
 
 react@^18.3.1            # UI library
 react-dom@^18.3.1        # DOM renderer
+react-router-dom@^6.x    # Client-side routing (Home → Lesson → Quiz)
 vite@^5.3.1              # Build tool / dev server
 @vitejs/plugin-react      # Vite React plugin
-axios@^1.7.2             # API calls from frontend
-framer-motion@^11.3.2    # Animations & transitions
+axios@^1.7.2             # API calls from frontend to backend
+framer-motion@^11.3.2    # Page and element animations
 lucide-react@^0.400.0    # Icon library
 
 # Install frontend deps:
@@ -38,6 +36,11 @@ lucide-react@^0.400.0    # Icon library
 # Create backend/.env with:
 #   GROQ_API_KEY=your_groq_api_key_here
 #   PORT=5000
+
+# ── BROWSER REQUIREMENTS ─────────────────────────────────────
+# Voice search uses the Web Speech API.
+# Supported in: Chrome, Edge (Chromium-based browsers only)
+# Not supported in: Firefox, Safari
 
 # ── NODE VERSION ─────────────────────────────────────────────
 # Recommended: 20.x LTS
