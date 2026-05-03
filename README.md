@@ -200,14 +200,14 @@ All lesson data is held in `App.jsx` state and passed as props, keeping the data
 | Area | Assumption |
 |---|---|
 | **Grade range** | Grades 1–12 are supported. The LLM prompt uses the grade number to calibrate vocabulary and explanation depth. |
-| **Language** | All generated content is in English. YouTube results are filtered to English using `relevanceLanguage: en`. |
+| **Language** | All generated content is in English. |
 | **Quiz format** | Always exactly 3 questions, each with exactly 4 options and one correct answer. The processing layer enforces and validates this structure. |
 | **AI response format** | The LLM is prompted to return only JSON. The processing layer handles cases where it wraps the response in markdown code fences or includes extra text. |
 | **Simplified summary** | The simplified mode uses rule-based word substitution rather than a second LLM call — intentionally lightweight to avoid doubling API usage and latency. |
 | **Voice search support** | Web Speech API works in Chromium-based browsers only (Chrome, Edge). Other browsers receive a clear error message rather than a broken experience. |
 | **Session persistence** | Lesson and quiz data live in React component state. Refreshing the `/quiz` or `/lesson` page directly will redirect to home, as state is not persisted to localStorage or a database. |
 | **Recent searches** | Only the topic and grade of the last 3 searches are stored in localStorage — no lesson content is cached locally. |
-| **API key security** | Both the Groq and YouTube API keys are stored server-side in `.env` and never sent to the frontend. |
+| **API key security** | The Groq API key is stored server-side in `.env` and never sent to the frontend. |
 | **Model choice** | `llama-3.1-8b-instant` on Groq is used for both lesson generation and quiz feedback. It is fast enough for a responsive UX and reliable enough for structured JSON output at educational complexity levels. |
 
 ---
@@ -237,7 +237,6 @@ npm run dev
 | Variable | Where to get it | Required |
 |---|---|---|
 | `GROQ_API_KEY` | [console.groq.com](https://console.groq.com) | Yes |
-| `YOUTUBE_API_KEY` | [console.cloud.google.com](https://console.cloud.google.com) | Yes |
 | `PORT` | Set to `5000` or any open port | No (defaults to 5000) |
 
 Never commit your `.env` file. It is already listed in `.gitignore`.
