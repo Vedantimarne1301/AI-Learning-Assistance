@@ -18,33 +18,6 @@ An AI-powered full-stack web application that generates structured educational c
 | **Recent Searches** | Last 3 topics saved in localStorage for quick re-access |
 | **Multi-page Flow** | Home → Lesson → Quiz with React Router |
 
----
-
-##  Project Structure
-AI-Learning-Assistant/
-├── backend/
-│   ├── server.js                  ← Express app entry point
-│   ├── .env                       ← API keys (you create this)
-│   ├── routes/
-│   │   └── learn.js               ← /learn, /feedback
-│   └── services/
-│       ├── groqService.js         ← Groq LLM API integration
-│       └── processingService.js   ← JSON validation + paraphrasing layer
-├── frontend/
-│   ├── src/
-│   │   ├── App.jsx                ← Root component + routing
-│   │   ├── App.css                ← Global styles (notebook aesthetic)
-│   │   ├── main.jsx               ← React entry point
-│   │   ├── pages/
-│   │   │   ├── HomePage.jsx       ← Input form + voice search
-│   │   │   ├── LessonPage.jsx     ← Summary, key points
-│   │   │   └── QuizPage.jsx       ← Interactive quiz + results
-│   │   └── components/
-│   │       
-│   ├── index.html
-│   └── package.json
-├── requirements.txt               ← Human-readable dependency reference
-└── README.md
 
 ---
 
@@ -72,7 +45,6 @@ AI-Learning-Assistant/
 - Node.js >= 18.x
 - npm >= 9.x
 - A [Groq API key](https://console.groq.com)
-- A [YouTube Data API v3 key](https://console.cloud.google.com)
 
 ---
 
