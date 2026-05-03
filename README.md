@@ -33,7 +33,7 @@ An AI-powered full-stack web application that generates structured educational c
 | Backend | Node.js, Express |
 | Input Validation | express-validator |
 | Logging | Morgan |
-| AI Model | Groq API — llama3-8b-8192 |
+| AI Model | Groq API — llama-3.1-8b-instant |
 | Voice Input | Web Speech API (browser-native) |
 
 ---
