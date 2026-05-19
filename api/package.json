@@ -1,0 +1,7 @@
+{
+  "name": "ai-learning-assistant-api",
+  "version": "1.0.0",
+  "dependencies": {
+    "groq-sdk": "^0.3.3"
+  }
+}

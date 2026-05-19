@@ -1,8 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const { body, validationResult } = require('express-validator');
-const { generateLearningContent } = require('../services/groqService');
-const { validateAndParse, paraphraseSummary } = require('../services/processingService');
+const { body, query, validationResult } = require('express-validator');
+const { generateLearningContent } = require('../../api/services/groqService');
+const { validateAndParse, paraphraseSummary } = require('../../api/services/processingService');
+const axios = require('axios');
 
 router.post(
   '/learn',
@@ -84,5 +85,7 @@ Give a helpful, friendly explanation in 3 parts. Respond ONLY with valid JSON, n
     res.status(500).json({ error: 'Could not generate feedback' });
   }
 });
+
+
 
 module.exports = router;

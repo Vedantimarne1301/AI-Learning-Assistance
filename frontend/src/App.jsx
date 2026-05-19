@@ -15,7 +15,7 @@ export default function App() {
     setLoading(true);
     setError('');
     try {
-      const res = await axios.post('http://localhost:5000/api/learn', { topic, grade });
+      const res = await axios.post('/api/learn', { topic, grade });
       setLessonData(res.data);
       navigate('/lesson');
     } catch (e) {

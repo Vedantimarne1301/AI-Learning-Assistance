@@ -24,7 +24,7 @@ export default function QuizPage({ data }) {
     if (!correct) {
       setLoadingFeedback(true);
       try {
-        const res = await axios.post('http://localhost:5000/api/feedback', {
+        const res = await axios.post('/api/feedback', {
           question: q.question,
           userAnswer: opt,
           correctAnswer: q.correctAnswer,
